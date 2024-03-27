@@ -1,0 +1,47 @@
+body
+    overflow-x: hidden
+.container
+
+    display: flex
+    flex-direction: column
+
+    width: 100vw
+    overflow-x: hidden
+    
+    justify-content: flex-start
+    align-items: center
+
+    gap: 15px
+    
+    .block
+        display: flex
+        flex-direction: row
+
+        width: 700px
+        height: 60px
+
+        justify-content: flex-start
+        align-items: center
+
+        border: 1px solid coral
+        border-radius: 15px
+
+        transition: .5s
+
+        gap: 10px
+        padding-left: 15px
+
+    .completedBlock
+        @extend .block
+        border: 1px solid teal  
+        
+        transition: .5s
+        opacity: 0.5
+        background-color: green
+        .toDoText
+            text-decoration: line-through
+            color: white
+        
+        .toDoId
+            color: white
+            
